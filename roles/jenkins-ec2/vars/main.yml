@@ -1,0 +1,17 @@
+# AWS Credentials
+aws_access_key: YOURACCESSKEY
+aws_secret_key: YOURSECRETKEY
+aws_region:     "us-east-1"
+
+# SecurityGroup name
+sg_name: WebServerSG
+sg_name_description: WebServerSG_Jenkins
+
+# To be assigned from VPC roles
+vpc_id: "{{ vpc_id }}"
+keypair: "aws-srvubuntu" # "mynewkey"
+ami: ami-09d95fab7fff3776c # ami-024c80694b5b3e51a
+instance_type: t2.micro
+public_subnet_id: "{{ public_subnet_id }}"
+instance_name: jenkins-ec2
+ansible_ssh_private_key_file: ~/.ssh/aws-srvubuntu.pem

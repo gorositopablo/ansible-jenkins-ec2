@@ -1,0 +1,16 @@
+---
+
+# AWS Credentials
+aws_access_key: YOURACCESSKEY
+aws_secret_key: YOURSECRETKEY
+aws_region: "us-east-1"
+
+# VPC Information
+vpc_name: "VPC-test"
+vpc_cidr_block: "10.0.0.0/16"
+
+# For Security Group Rule
+my_ip: 78.150.28.190 # change for prod
+
+# Subnets
+public_subnet_cidr: "10.0.0.0/24"
